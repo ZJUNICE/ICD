@@ -1,0 +1,22 @@
+dataloader: 'PlainDataLoader'
+seed: 42
+model_name: "gpt2"
+model_path: 'config/model/gpt2'
+
+vocab_size: -1
+block_size: -1  # max length of input sequence
+
+ac:
+  precision: 31  # >18 for vocab_size 50257
+  io: 'TextCompressFileIO' # class for w/r compressed file
+  io_end_char: ' '
+
+trainer:
+  device: 'auto'
+  num_workers: 1
+  max_iters: .inf
+  batch_size: 1
+  learning_rate: 3e-4
+  betas: [0.9, 0.95]
+  weight_decay: 0.1
+  grad_norm_clip: 1.0

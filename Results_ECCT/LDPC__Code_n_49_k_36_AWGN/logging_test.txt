@@ -1,0 +1,75 @@
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fcfcc604340>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f731f274310>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fbed6bc82e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f66e40f82e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f09679c42e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f9623c882e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f15e20902e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f53b774c2e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f94866642b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7ff9b8d182e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fd3553c82e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f2d1179c2e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fc31f00c2e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f1262220df0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_36_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=36, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fbbd33d8df0>, model_path='Results_ECCT/LDPC__Code_n_49_k_36_AWGN')
+Message total length: 2480
+Codeword total length: 3626
+Transmission channel type: AWGN

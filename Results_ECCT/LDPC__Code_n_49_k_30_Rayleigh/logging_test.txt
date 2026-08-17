@@ -1,0 +1,30 @@
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=30, code_n=49, channel='Rayleigh', isParallel=True, code=<__main__.Code object at 0x7f33e9d04310>, model_path='Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh')
+Message total length: 2480
+Codeword total length: 4361
+Transmission channel type: Rayleigh
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=30, code_n=49, channel='Rayleigh', isParallel=True, code=<__main__.Code object at 0x7ff542be02e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh')
+Message total length: 2480
+Codeword total length: 4361
+Transmission channel type: Rayleigh
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=30, code_n=49, channel='Rayleigh', isParallel=True, code=<__main__.Code object at 0x7f242361c2b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh')
+Message total length: 2480
+Codeword total length: 4361
+Transmission channel type: Rayleigh
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=30, code_n=49, channel='Rayleigh', isParallel=True, code=<__main__.Code object at 0x7f2b9e6402e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh')
+Message total length: 2480
+Codeword total length: 4361
+Transmission channel type: Rayleigh
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=30, code_n=49, channel='Rayleigh', isParallel=True, code=<__main__.Code object at 0x7f17234182e0>, model_path='Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh')
+Message total length: 2480
+Codeword total length: 4361
+Transmission channel type: Rayleigh
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=30, code_n=49, channel='Rayleigh', isParallel=True, code=<__main__.Code object at 0x7fec99bcc310>, model_path='Results_ECCT/LDPC__Code_n_49_k_30_Rayleigh')
+Message total length: 2480
+Codeword total length: 4361
+Transmission channel type: Rayleigh

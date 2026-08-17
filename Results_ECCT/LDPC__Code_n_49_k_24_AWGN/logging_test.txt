@@ -1,0 +1,808 @@
+Path to model/logs: Results_ECCT\LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x000001287F952740>, model_path='Results_ECCT\\LDPC__Code_n_49_k_24_AWGN', msg_path='mydata\\demo_encode_out.txt')
+Message total length: 2477
+Codeword total length: 5341
+Path to model/logs: Results_ECCT\LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x0000014FB186E830>, model_path='Results_ECCT\\LDPC__Code_n_49_k_24_AWGN', msg_path='mydata\\demo_encode_out.txt')
+Message total length: 2477
+Codeword total length: 5341
+Path to model/logs: Results_ECCT\LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=False, code=<__main__.Code object at 0x000002996B36E8C0>, model_path='Results_ECCT\\LDPC__Code_n_49_k_24_AWGN', msg_path='mydata\\demo_encode_out.txt')
+Message total length: 2477
+Codeword total length: 5341
+Path to model/logs: Results_ECCT\LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=False, N_dec=6, d_model=32, h=8, code=<__main__.Code object at 0x000001DAD7FFEDD0>, model_path='Results_ECCT\\LDPC__Code_n_49_k_24_AWGN', msg_path='mydata\\demo_encode_out.txt')
+Message total length: 2477
+Codeword total length: 5341
+Self-Attention Sparsity Ratio=72.26%,               Self-Attention Complexity Ratio=13.87%
+Mask:
+ tensor([[[[False,  True,  True,  ...,  True,  True,  True],
+          [ True, False,  True,  ...,  True,  True,  True],
+          [ True,  True, False,  ...,  True,  True,  True],
+          ...,
+          [ True,  True,  True,  ..., False,  True,  True],
+          [ True,  True,  True,  ...,  True, False,  True],
+          [ True,  True,  True,  ...,  True,  True, False]]]])
+Path to model/logs: Results_ECCT\LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, N_dec=6, d_model=32, h=8, code=<__main__.Code object at 0x000001855404EDD0>, model_path='Results_ECCT\\LDPC__Code_n_49_k_24_AWGN', msg_path='mydata\\demo_encode_out.txt')
+Message total length: 2477
+Codeword total length: 5341
+Self-Attention Sparsity Ratio=72.26%,               Self-Attention Complexity Ratio=13.87%
+Mask:
+ tensor([[[[False,  True,  True,  ...,  True,  True,  True],
+          [ True, False,  True,  ...,  True,  True,  True],
+          [ True,  True, False,  ...,  True,  True,  True],
+          ...,
+          [ True,  True,  True,  ..., False,  True,  True],
+          [ True,  True,  True,  ...,  True, False,  True],
+          [ True,  True,  True,  ...,  True,  True, False]]]])
+Path to model/logs: Results_ECCT\LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x00000186AB05E8C0>, model_path='Results_ECCT\\LDPC__Code_n_49_k_24_AWGN', msg_path='mydata\\demo_encode_out.txt')
+Message total length: 2477
+Codeword total length: 5341
+Transmission channel type: AWGN
+ECC_Transformer(
+  (decoder): Encoder(
+    (layers): ModuleList(
+      (0-5): 6 x EncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linears): ModuleList(
+            (0-3): 4 x Linear(in_features=32, out_features=32, bias=True)
+          )
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=32, out_features=128, bias=True)
+          (w_2): Linear(in_features=128, out_features=32, bias=True)
+          (dropout): Dropout(p=0, inplace=False)
+        )
+        (sublayer): ModuleList(
+          (0-1): 2 x SublayerConnection(
+            (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+            (dropout): Dropout(p=0, inplace=False)
+          )
+        )
+      )
+    )
+    (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+    (norm2): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+  )
+  (oned_final_embed): Sequential(
+    (0): Linear(in_features=32, out_features=1, bias=True)
+  )
+  (out_fc): Linear(in_features=77, out_features=49, bias=True)
+)
+
+Noise BER -6: 2.26e-01 -3: 1.62e-01 0: 6.97e-02 3: 2.21e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.64e-01 -3: 3.79e-01 0: 2.74e-01 3: 1.27e-01 6: 4.03e-08 9: 3.12e-08 12: 3.55e-08 15: 3.55e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 6.67e-01 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.35e-01 -3: 1.55e-01 0: 1.04e-01 3: 3.91e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.45e+00 -3: 1.87e+00 0: 2.27e+00 3: 3.24e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 1.1732752323150635 s
+
+
+Noise BER -6: 2.43e-01 -3: 1.49e-01 0: 5.81e-02 3: 1.88e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.00e-01 -3: 4.03e-01 0: 2.46e-01 3: 1.13e-01 6: 4.10e-08 9: 2.99e-08 12: 3.39e-08 15: 3.48e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 6.92e-01 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.50e-01 -3: 1.66e-01 0: 1.04e-01 3: 4.40e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.39e+00 -3: 1.79e+00 0: 2.27e+00 3: 3.12e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 0.36896634101867676 s
+
+
+Noise BER -6: 2.42e-01 -3: 1.46e-01 0: 7.29e-02 3: 1.75e-02 6: 2.92e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.78e-01 -3: 3.83e-01 0: 2.86e-01 3: 1.15e-01 6: 4.49e-02 9: 3.37e-08 12: 3.54e-08 15: 3.34e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 4.29e-01 6: 1.43e-01 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.48e-01 -3: 1.57e-01 0: 1.08e-01 3: 3.79e-02 6: 1.46e-02 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.40e+00 -3: 1.85e+00 0: 2.23e+00 3: 3.27e+00 6: 4.23e+00 9: inf 12: inf 15: inf
+Test Time 0.19901633262634277 s
+
+
+Noise BER -6: 2.42e-01 -3: 1.60e-01 0: 6.85e-02 3: 1.75e-02 6: 2.92e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.19e-01 -3: 3.90e-01 0: 2.53e-01 3: 1.07e-01 6: 2.88e-02 9: 3.27e-08 12: 3.54e-08 15: 3.60e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 9.29e-01 3: 5.00e-01 6: 1.43e-01 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.51e-01 -3: 1.76e-01 0: 9.77e-02 3: 4.23e-02 6: 1.02e-02 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.38e+00 -3: 1.74e+00 0: 2.33e+00 3: 3.16e+00 6: 4.58e+00 9: inf 12: inf 15: inf
+Test Time 0.3890647888183594 s
+
+
+Noise BER -6: 2.65e-01 -3: 1.77e-01 0: 9.18e-02 3: 2.72e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 6.05e-01 -3: 3.76e-01 0: 2.60e-01 3: 1.98e-01 6: 5.72e-08 9: 2.64e-08 12: 3.24e-08 15: 3.32e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 8.33e-01 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.65e-01 -3: 1.80e-01 0: 1.09e-01 3: 7.48e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.33e+00 -3: 1.71e+00 0: 2.22e+00 3: 2.59e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 0.1739819049835205 s
+
+
+Noise BER -6: 2.48e-01 -3: 1.50e-01 0: 5.78e-02 3: 2.04e-02 6: 3.40e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.17e-01 -3: 3.64e-01 0: 2.66e-01 3: 8.75e-02 6: 2.30e-02 9: 2.84e-08 12: 3.32e-08 15: 3.65e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 5.00e-01 6: 1.67e-01 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.45e-01 -3: 1.67e-01 0: 1.05e-01 3: 3.06e-02 6: 1.36e-02 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.41e+00 -3: 1.79e+00 0: 2.25e+00 3: 3.49e+00 6: 4.30e+00 9: inf 12: inf 15: inf
+Test Time 0.17235207557678223 s
+
+
+Noise BER -6: 2.40e-01 -3: 1.33e-01 0: 4.59e-02 3: 1.53e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.78e-01 -3: 3.80e-01 0: 2.79e-01 3: 1.18e-01 6: 4.01e-08 9: 3.10e-08 12: 3.41e-08 15: 3.71e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 7.50e-01 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.14e-01 -3: 1.48e-01 0: 1.22e-01 3: 3.06e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.54e+00 -3: 1.91e+00 0: 2.10e+00 3: 3.49e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 0.12771129608154297 s
+
+
+Noise BER -6: 2.47e-01 -3: 1.56e-01 0: 9.69e-02 3: 3.32e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.56e-01 -3: 3.44e-01 0: 2.98e-01 3: 1.65e-01 6: 3.62e-08 9: 3.35e-08 12: 3.19e-08 15: 3.50e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 1.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.63e-01 -3: 1.51e-01 0: 1.15e-01 3: 5.10e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.34e+00 -3: 1.89e+00 0: 2.16e+00 3: 2.98e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 0.22849225997924805 s
+
+
+Noise BER -6: 2.35e-01 -3: 1.71e-01 0: 7.35e-02 3: 2.24e-02 6: 0.00e+00 9: 2.04e-03 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.07e-01 -3: 3.91e-01 0: 2.26e-01 3: 9.15e-02 6: 3.58e-08 9: 7.57e-03 12: 3.33e-08 15: 3.50e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 4.00e-01 6: 0.00e+00 9: 1.00e-01 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.29e-01 -3: 1.84e-01 0: 9.18e-02 3: 3.27e-02 6: 0.00e+00 9: 4.08e-03 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.48e+00 -3: 1.69e+00 0: 2.39e+00 3: 3.42e+00 6: inf 9: 5.50e+00 12: inf 15: inf
+Test Time 0.29230237007141113 s
+
+
+Noise BER -6: 2.08e-01 -3: 1.58e-01 0: 1.01e-01 3: 1.63e-02 6: 2.72e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.62e-01 -3: 3.72e-01 0: 2.63e-01 3: 9.22e-02 6: 4.41e-03 9: 3.18e-08 12: 3.21e-08 15: 3.50e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 5.33e-01 6: 6.67e-02 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.15e-01 -3: 1.56e-01 0: 1.17e-01 3: 2.86e-02 6: 1.36e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.54e+00 -3: 1.85e+00 0: 2.15e+00 3: 3.56e+00 6: 6.60e+00 9: inf 12: inf 15: inf
+Test Time 0.42432475090026855 s
+
+
+Noise BER -6: 2.60e-01 -3: 1.73e-01 0: 7.91e-02 3: 2.30e-02 6: 5.10e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.63e-01 -3: 4.07e-01 0: 2.60e-01 3: 1.41e-01 6: 3.02e-02 9: 3.56e-08 12: 3.65e-08 15: 3.86e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 7.50e-01 6: 2.50e-01 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.73e-01 -3: 1.61e-01 0: 1.10e-01 3: 5.10e-02 6: 1.53e-02 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.30e+00 -3: 1.83e+00 0: 2.21e+00 3: 2.98e+00 6: 4.18e+00 9: inf 12: inf 15: inf
+Test Time 0.22649335861206055 s
+
+
+Noise BER -6: 2.18e-01 -3: 1.43e-01 0: 8.84e-02 3: 1.36e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.57e-01 -3: 3.85e-01 0: 2.99e-01 3: 6.54e-02 6: 4.18e-08 9: 2.96e-08 12: 3.32e-08 15: 3.65e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 5.00e-01 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.21e-01 -3: 1.60e-01 0: 1.09e-01 3: 2.72e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.51e+00 -3: 1.83e+00 0: 2.22e+00 3: 3.60e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 0.17098379135131836 s
+
+Path to model/logs: Results_ECCT\LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x000001C4773E26E0>, model_path='Results_ECCT\\LDPC__Code_n_49_k_24_AWGN', msg_path='mydata\\demo_encode_out.txt')
+Message total length: 2477
+Codeword total length: 5341
+Transmission channel type: AWGN
+
+Noise BER -6: 2.26e-01 -3: 1.62e-01 0: 6.97e-02 3: 2.21e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.64e-01 -3: 3.79e-01 0: 2.74e-01 3: 1.27e-01 6: 4.03e-08 9: 3.12e-08 12: 3.55e-08 15: 3.55e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 6.67e-01 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.35e-01 -3: 1.55e-01 0: 1.04e-01 3: 3.91e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.45e+00 -3: 1.87e+00 0: 2.27e+00 3: 3.24e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 1.0468413829803467 s
+
+
+Noise BER -6: 2.43e-01 -3: 1.49e-01 0: 5.81e-02 3: 1.88e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.00e-01 -3: 4.03e-01 0: 2.46e-01 3: 1.13e-01 6: 4.10e-08 9: 2.99e-08 12: 3.39e-08 15: 3.48e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 6.92e-01 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.50e-01 -3: 1.66e-01 0: 1.04e-01 3: 4.40e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.39e+00 -3: 1.79e+00 0: 2.27e+00 3: 3.12e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 0.3662433624267578 s
+
+
+Noise BER -6: 2.42e-01 -3: 1.46e-01 0: 7.29e-02 3: 1.75e-02 6: 2.92e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.78e-01 -3: 3.83e-01 0: 2.86e-01 3: 1.15e-01 6: 4.49e-02 9: 3.37e-08 12: 3.54e-08 15: 3.34e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 4.29e-01 6: 1.43e-01 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.48e-01 -3: 1.57e-01 0: 1.08e-01 3: 3.79e-02 6: 1.46e-02 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.40e+00 -3: 1.85e+00 0: 2.23e+00 3: 3.27e+00 6: 4.23e+00 9: inf 12: inf 15: inf
+Test Time 0.1998460292816162 s
+
+
+Noise BER -6: 2.42e-01 -3: 1.60e-01 0: 6.85e-02 3: 1.75e-02 6: 2.92e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.19e-01 -3: 3.90e-01 0: 2.53e-01 3: 1.07e-01 6: 2.88e-02 9: 3.27e-08 12: 3.54e-08 15: 3.60e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 9.29e-01 3: 5.00e-01 6: 1.43e-01 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.51e-01 -3: 1.76e-01 0: 9.77e-02 3: 4.23e-02 6: 1.02e-02 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.38e+00 -3: 1.74e+00 0: 2.33e+00 3: 3.16e+00 6: 4.58e+00 9: inf 12: inf 15: inf
+Test Time 0.3890857696533203 s
+
+
+Noise BER -6: 2.65e-01 -3: 1.77e-01 0: 9.18e-02 3: 2.72e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 6.05e-01 -3: 3.76e-01 0: 2.60e-01 3: 1.98e-01 6: 5.72e-08 9: 2.64e-08 12: 3.24e-08 15: 3.32e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 8.33e-01 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.65e-01 -3: 1.80e-01 0: 1.09e-01 3: 7.48e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.33e+00 -3: 1.71e+00 0: 2.22e+00 3: 2.59e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 0.1667332649230957 s
+
+
+Noise BER -6: 2.48e-01 -3: 1.50e-01 0: 5.78e-02 3: 2.04e-02 6: 3.40e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.17e-01 -3: 3.64e-01 0: 2.66e-01 3: 8.75e-02 6: 2.30e-02 9: 2.84e-08 12: 3.32e-08 15: 3.65e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 5.00e-01 6: 1.67e-01 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.45e-01 -3: 1.67e-01 0: 1.05e-01 3: 3.06e-02 6: 1.36e-02 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.41e+00 -3: 1.79e+00 0: 2.25e+00 3: 3.49e+00 6: 4.30e+00 9: inf 12: inf 15: inf
+Test Time 0.18401789665222168 s
+
+
+Noise BER -6: 2.40e-01 -3: 1.33e-01 0: 4.59e-02 3: 1.53e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.78e-01 -3: 3.80e-01 0: 2.79e-01 3: 1.18e-01 6: 4.01e-08 9: 3.10e-08 12: 3.41e-08 15: 3.71e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 7.50e-01 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.14e-01 -3: 1.48e-01 0: 1.22e-01 3: 3.06e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.54e+00 -3: 1.91e+00 0: 2.10e+00 3: 3.49e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 0.11699962615966797 s
+
+
+Noise BER -6: 2.47e-01 -3: 1.56e-01 0: 9.69e-02 3: 3.32e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.56e-01 -3: 3.44e-01 0: 2.98e-01 3: 1.65e-01 6: 3.62e-08 9: 3.35e-08 12: 3.19e-08 15: 3.50e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 1.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.63e-01 -3: 1.51e-01 0: 1.15e-01 3: 5.10e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.34e+00 -3: 1.89e+00 0: 2.16e+00 3: 2.98e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 0.2212848663330078 s
+
+
+Noise BER -6: 2.35e-01 -3: 1.71e-01 0: 7.35e-02 3: 2.24e-02 6: 0.00e+00 9: 2.04e-03 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.07e-01 -3: 3.91e-01 0: 2.26e-01 3: 9.15e-02 6: 3.58e-08 9: 7.57e-03 12: 3.33e-08 15: 3.50e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 4.00e-01 6: 0.00e+00 9: 1.00e-01 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.29e-01 -3: 1.84e-01 0: 9.18e-02 3: 3.27e-02 6: 0.00e+00 9: 4.08e-03 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.48e+00 -3: 1.69e+00 0: 2.39e+00 3: 3.42e+00 6: inf 9: 5.50e+00 12: inf 15: inf
+Test Time 0.27750563621520996 s
+
+
+Noise BER -6: 2.08e-01 -3: 1.58e-01 0: 1.01e-01 3: 1.63e-02 6: 2.72e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.62e-01 -3: 3.72e-01 0: 2.63e-01 3: 9.22e-02 6: 4.41e-03 9: 3.18e-08 12: 3.21e-08 15: 3.50e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 5.33e-01 6: 6.67e-02 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.15e-01 -3: 1.56e-01 0: 1.17e-01 3: 2.86e-02 6: 1.36e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.54e+00 -3: 1.85e+00 0: 2.15e+00 3: 3.56e+00 6: 6.60e+00 9: inf 12: inf 15: inf
+Test Time 0.4108009338378906 s
+
+
+Noise BER -6: 2.60e-01 -3: 1.73e-01 0: 7.91e-02 3: 2.30e-02 6: 5.10e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.63e-01 -3: 4.07e-01 0: 2.60e-01 3: 1.41e-01 6: 3.02e-02 9: 3.56e-08 12: 3.65e-08 15: 3.86e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 7.50e-01 6: 2.50e-01 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.73e-01 -3: 1.61e-01 0: 1.10e-01 3: 5.10e-02 6: 1.53e-02 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.30e+00 -3: 1.83e+00 0: 2.21e+00 3: 2.98e+00 6: 4.18e+00 9: inf 12: inf 15: inf
+Test Time 0.22995948791503906 s
+
+
+Noise BER -6: 2.18e-01 -3: 1.43e-01 0: 8.84e-02 3: 1.36e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.57e-01 -3: 3.85e-01 0: 2.99e-01 3: 6.54e-02 6: 4.18e-08 9: 2.96e-08 12: 3.32e-08 15: 3.65e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 1.00e+00 3: 5.00e-01 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.21e-01 -3: 1.60e-01 0: 1.09e-01 3: 2.72e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.51e+00 -3: 1.83e+00 0: 2.22e+00 3: 3.60e+00 6: inf 9: inf 12: inf 15: inf
+Test Time 0.16614103317260742 s
+
+Path to model/logs: Results_ECCT\LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x00000205C95AFFA0>, model_path='Results_ECCT\\LDPC__Code_n_49_k_24_AWGN', msg_path='mydata\\demo_encode_out.txt')
+Message total length: 2477
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT\LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x000001D7D441E890>, model_path='Results_ECCT\\LDPC__Code_n_49_k_24_AWGN', msg_path='mydata\\demo_encode_out.txt')
+Message total length: 2477
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT\LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x00000139D7582560>, model_path='Results_ECCT\\LDPC__Code_n_49_k_24_AWGN', msg_path='mydata\\demo_encode_out.txt')
+Message total length: 2477
+Codeword total length: 5341
+Transmission channel type: AWGN
+
+Noise BER -6: 2.31e-01 -3: 1.89e-01 0: 6.63e-02 3: 1.87e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.58e-01 -3: 3.73e-01 0: 4.91e-03 3: 3.23e-06 6: 4.32e-08 9: 3.00e-08 12: 3.20e-08 15: 3.51e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 0.00e+00 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.07e-01 -3: 1.63e-01 0: 0.00e+00 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.57e+00 -3: 1.81e+00 0: inf 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 2.2561416625976562 s
+
+
+Noise BER -6: 2.51e-01 -3: 1.54e-01 0: 6.12e-02 3: 2.35e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.78e-01 -3: 2.67e-01 0: 4.67e-02 3: 2.70e-06 6: 4.47e-08 9: 3.13e-08 12: 3.42e-08 15: 3.61e-08
+Test FER -6: 1.00e+00 -3: 8.46e-01 0: 2.31e-01 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.46e-01 -3: 1.10e-01 0: 1.41e-02 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.40e+00 -3: 2.21e+00 0: 4.26e+00 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 1.0810449123382568 s
+
+
+Noise BER -6: 2.39e-01 -3: 1.63e-01 0: 8.16e-02 3: 2.62e-02 6: 2.92e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.93e-01 -3: 3.50e-01 0: 3.56e-02 3: 9.69e-06 6: 1.59e-07 9: 3.23e-08 12: 3.41e-08 15: 3.23e-08
+Test FER -6: 1.00e+00 -3: 8.57e-01 0: 2.86e-01 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.54e-01 -3: 1.55e-01 0: 1.46e-02 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.37e+00 -3: 1.87e+00 0: 4.23e+00 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 0.5663197040557861 s
+
+
+Noise BER -6: 2.45e-01 -3: 1.49e-01 0: 7.58e-02 3: 2.33e-02 6: 2.92e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.17e-01 -3: 2.65e-01 0: 6.04e-02 3: 2.00e-06 6: 1.38e-07 9: 3.28e-08 12: 3.49e-08 15: 3.58e-08
+Test FER -6: 1.00e+00 -3: 7.14e-01 0: 1.43e-01 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.51e-01 -3: 1.11e-01 0: 2.19e-02 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.38e+00 -3: 2.20e+00 0: 3.82e+00 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 1.1453678607940674 s
+
+
+Noise BER -6: 2.52e-01 -3: 1.50e-01 0: 7.48e-02 3: 2.04e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.12e-01 -3: 2.73e-01 0: 5.11e-02 3: 8.58e-06 6: 5.64e-08 9: 2.84e-08 12: 3.20e-08 15: 3.53e-08
+Test FER -6: 1.00e+00 -3: 6.67e-01 0: 3.33e-01 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.55e-01 -3: 1.12e-01 0: 2.72e-02 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.37e+00 -3: 2.19e+00 0: 3.60e+00 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 0.49776530265808105 s
+
+
+Noise BER -6: 2.35e-01 -3: 1.67e-01 0: 7.14e-02 3: 1.36e-02 6: 3.40e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.76e-01 -3: 2.85e-01 0: 6.21e-02 3: 7.45e-07 6: 8.76e-08 9: 2.92e-08 12: 3.61e-08 15: 3.61e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 3.33e-01 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.35e-01 -3: 1.05e-01 0: 2.04e-02 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.45e+00 -3: 2.25e+00 0: 3.89e+00 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 0.5000207424163818 s
+
+
+Noise BER -6: 2.55e-01 -3: 1.68e-01 0: 4.59e-02 3: 2.04e-02 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.09e-01 -3: 4.47e-01 0: 1.33e-03 3: 2.25e-06 6: 3.77e-08 9: 3.16e-08 12: 3.47e-08 15: 3.53e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 0.00e+00 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.50e-01 -3: 1.68e-01 0: 0.00e+00 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.39e+00 -3: 1.78e+00 0: inf 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 0.33906984329223633 s
+
+
+Noise BER -6: 2.40e-01 -3: 1.07e-01 0: 8.93e-02 3: 3.32e-02 6: 2.55e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.25e-01 -3: 1.89e-01 0: 7.98e-02 3: 1.91e-05 6: 1.04e-07 9: 3.19e-08 12: 3.47e-08 15: 3.50e-08
+Test FER -6: 1.00e+00 -3: 7.50e-01 0: 3.75e-01 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.30e-01 -3: 7.40e-02 0: 3.83e-02 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.47e+00 -3: 2.60e+00 0: 3.26e+00 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 0.656235933303833 s
+
+
+Noise BER -6: 2.41e-01 -3: 2.04e-01 0: 6.53e-02 3: 2.65e-02 6: 0.00e+00 9: 2.04e-03 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.24e-01 -3: 4.01e-01 0: 1.10e-02 3: 6.14e-06 6: 3.80e-08 9: 1.42e-07 12: 3.62e-08 15: 3.58e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 0.00e+00 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.39e-01 -3: 1.96e-01 0: 0.00e+00 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.43e+00 -3: 1.63e+00 0: inf 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 0.8144092559814453 s
+
+
+Noise BER -6: 2.31e-01 -3: 1.65e-01 0: 1.06e-01 3: 1.63e-02 6: 4.08e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.96e-01 -3: 2.93e-01 0: 1.21e-01 3: 2.33e-06 6: 3.96e-07 9: 3.37e-08 12: 3.36e-08 15: 3.45e-08
+Test FER -6: 1.00e+00 -3: 9.33e-01 0: 5.33e-01 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.33e-01 -3: 1.16e-01 0: 4.35e-02 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.46e+00 -3: 2.16e+00 0: 3.13e+00 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 1.2277412414550781 s
+
+
+Noise BER -6: 2.53e-01 -3: 1.63e-01 0: 6.63e-02 3: 2.81e-02 6: 7.65e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 4.87e-01 -3: 2.98e-01 0: 2.35e-02 3: 2.11e-04 6: 2.94e-07 9: 3.38e-08 12: 3.44e-08 15: 3.74e-08
+Test FER -6: 1.00e+00 -3: 7.50e-01 0: 1.25e-01 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.42e-01 -3: 1.38e-01 0: 7.65e-03 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.42e+00 -3: 1.98e+00 0: 4.87e+00 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 0.6755127906799316 s
+
+
+Noise BER -6: 2.41e-01 -3: 1.56e-01 0: 8.16e-02 3: 1.02e-02 6: 3.40e-03 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test Loss -6: 5.05e-01 -3: 3.39e-01 0: 6.75e-02 3: 1.25e-06 6: 2.51e-07 9: 3.61e-08 12: 3.37e-08 15: 3.65e-08
+Test FER -6: 1.00e+00 -3: 1.00e+00 0: 5.00e-01 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test BER -6: 2.18e-01 -3: 1.50e-01 0: 1.70e-02 3: 0.00e+00 6: 0.00e+00 9: 0.00e+00 12: 0.00e+00 15: 0.00e+00
+Test -ln(BER) -6: 1.52e+00 -3: 1.90e+00 0: 4.07e+00 3: inf 6: inf 9: inf 12: inf 15: inf
+Test Time 0.5040459632873535 s
+
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fd674998100>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f42ffac4130>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fae056d4130>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=40, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fd50e174130>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f42479d4250>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f323bbc4250>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f02a1f48220>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fc9560a8220>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f53576a8220>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fb75f3f0340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 4014
+Codeword total length: 8477
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fa6af1bc340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f9d3bfcc340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f758f490310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7efd57cd8340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fc4b53ac370>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fc1875242b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fb9bdf70340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f74103ec340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f9386c20340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f922f328340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f7fa7950340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f1db00a0340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f8fe2110340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fd616784340>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f698c1b0310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fc362e24310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7ff83d1542b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fe046cf0220>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f9bc9de82b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f9291ed42b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fd278bfc2b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f65d34302b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f3592d042b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1879
+Codeword total length: 4214
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f6bc5eb42b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1855
+Codeword total length: 4165
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fa4f44542b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1855
+Codeword total length: 4165
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f0ac8a602b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1814
+Codeword total length: 3969
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f5b5c8682b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1814
+Codeword total length: 3969
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f1ab46442b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1814
+Codeword total length: 3969
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fd02e2a42b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1814
+Codeword total length: 3969
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fb4d52142b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1814
+Codeword total length: 3969
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f6a9aa442b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1814
+Codeword total length: 3969
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fae8c2bc2b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1814
+Codeword total length: 3969
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f9d6dc982b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 1814
+Codeword total length: 3969
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f04ea1ec2b0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7efeb4dc0310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fe805c28310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f5d4eec4310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f8d0962c310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fe845430310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f2928ea0310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f8da8444310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f590624c310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f9d74db8310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f1ad298c310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fc0920cc310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fe49396c310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f9aef6d8310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fe899258310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, msg_filename='demo_encode_out', code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7faecde52380>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN', msg_path='/home/wzq/LLM-SSCC/baseline/SC-with-UT-main/demo_encode_out.txt')
+Message total length: 2332
+Codeword total length: 5047
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f9deb274310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fba70c50310>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f5ef3a08f10>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Total FLOPs: 0.1397G
+Total FLOPs: 0.1514G
+Total FLOPs: 0.0815G
+Total FLOPs: 0.1630G
+Total FLOPs: 0.0699G
+Total FLOPs: 0.0699G
+Total FLOPs: 0.0466G
+Total FLOPs: 0.0931G
+Total FLOPs: 0.1164G
+Total FLOPs: 0.1746G
+Total FLOPs: 0.0931G
+Total FLOPs: 0.0699G
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f96569d0f10>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7ff71c864eb0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f4897564f70>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7ffa668bce80>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fa2a1a20eb0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fddd093ceb0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7efd349dceb0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7ff8930e4eb0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fdeb77ece80>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7ff2b7fe8d60>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fa8e7ad0d60>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f2f0e9e0d60>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f3c25c34d60>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fd7e0f4cdf0>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f81d8a00e80>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fda83c88e80>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fc5783c0e80>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fab60c3ce80>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fce54f88e80>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7fc157e64e80>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
+Path to model/logs: Results_ECCT/LDPC__Code_n_49_k_24_AWGN
+Namespace(workers=4, gpus='0', test_batch_size=2048, seed=42, code_type='LDPC', code_k=24, code_n=49, channel='AWGN', isParallel=True, code=<__main__.Code object at 0x7f3bc0e5ce80>, model_path='Results_ECCT/LDPC__Code_n_49_k_24_AWGN')
+Message total length: 2480
+Codeword total length: 5341
+Transmission channel type: AWGN
